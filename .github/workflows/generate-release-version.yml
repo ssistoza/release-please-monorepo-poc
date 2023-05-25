@@ -24,7 +24,7 @@ jobs:
   create-release-pr:
     needs: build
     runs-on: ubuntu-latest
-     outputs:
+    outputs:
       releases_created: ${{ steps.rp.outputs.releases_created }}
     steps:
       - id: rp
