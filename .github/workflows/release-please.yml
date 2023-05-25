@@ -20,7 +20,8 @@ jobs:
           cache: 'yarn'
       - run: yarn install
       - run: yarn build
-  release-please:
+      - run: echo ${{ steps.release.outputs.release_created }}
+  create-release-pr:
     needs: build
     runs-on: ubuntu-latest
     steps:
