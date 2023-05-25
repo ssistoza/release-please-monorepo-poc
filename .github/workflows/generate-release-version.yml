@@ -25,7 +25,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     outputs:
-      releases_created: ${{ steps.rp.outputs.releases_created }}
+      output1: ${{ steps.rp.outputs.releases_created }}
     steps:
       - id: rp
         uses: google-github-actions/release-please-action@v3
@@ -43,5 +43,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-      - run: echo ${{ jobs.create-release-pr.outputs.releases_created }}
+      - enb:
+          OUTPUT1: $${{needs.create-release-pr.outputs.ouput1}}
+      - run: echo $OUTPUT1
       - run: echo "Success now publish"
