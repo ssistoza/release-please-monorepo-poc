@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ssistoza/release-please-monorepo-poc/compare/reading-demo-v1.1.0...reading-demo-v1.1.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* private scoped packages ([8830f12](https://github.com/ssistoza/release-please-monorepo-poc/commit/8830f12e60c221555bb1c2882ed9a261810cd82a))
+
 ## [1.1.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/reading-demo-v1.0.0...reading-demo-v1.1.0) (2023-05-25)
 
 

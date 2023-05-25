@@ -1,7 +1,6 @@
 {
-  "name": "@ssistoza/reading-demo",
-  "version": "1.1.0",
   "name": "reading-demo",
+  "version": "1.1.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "MIT",
