@@ -35,7 +35,7 @@ jobs:
           package-name: release-please-action
           monorepo-tags: true
   publish-package:
-    if: jobs.create-release-pr.outputs.releases_created
+    if: ${{ jobs.create-release-pr.outputs.releases_created == true }}
     needs: [build, create-release-pr]
     runs-on: ubuntu-latest
     steps:
