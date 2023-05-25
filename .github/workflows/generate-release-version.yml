@@ -43,5 +43,5 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-        run: echo ${{ jobs.create-release-pr.outputs.releases_created }}
+      - run: echo ${{ jobs.create-release-pr.outputs.releases_created }}
       - run: echo "Success now publish"
