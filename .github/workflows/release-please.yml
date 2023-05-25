@@ -15,7 +15,8 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node_version: 16
+          node-version: '16'
+          cache: 'yarn'
       - uses: actions/checkout@v3
       - run: yarn install
       - run: yarn build
@@ -25,6 +26,7 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
+          command: manifest
           release-type: node
           package-name: release-please-action
           monorepo-tags: true
