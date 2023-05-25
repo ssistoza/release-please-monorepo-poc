@@ -1,6 +1,7 @@
 {
   "packages": {
-    "packages/math-demo": {}
+    "packages/math-demo": {},
+    "packages/reading-demo": {}
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
