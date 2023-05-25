@@ -10,9 +10,15 @@ permissions:
 name: release-please
 
 jobs:
+  checkout:
+    runs-on: ubuntu-latest
+
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with: ssistoza/release-please-monorepo-poc
+      - run: yarn install
       - run: yarn build
   release-please:
     needs: build
