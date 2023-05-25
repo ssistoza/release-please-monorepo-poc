@@ -27,7 +27,7 @@ jobs:
     outputs:
       releases_created: ${{ steps.rp.outputs.releases_created }}
     steps:
-      - id: rp
+      id: rp
       - uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
@@ -39,8 +39,8 @@ jobs:
     needs: [build, create-release-pr]
     runs-on: ubuntu-latest
     steps:
-      - env:
-          OUTPUT: ${{ needs.create-release-pr.outputs.releases_created }}
+      env:
+        OUTPUT: ${{ needs.create-release-pr.outputs.releases_created }}
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
