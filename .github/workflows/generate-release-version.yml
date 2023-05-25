@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-      - enb:
+      - env:
           OUTPUT1: $${{needs.create-release-pr.outputs.ouput1}}
-      - run: echo $OUTPUT1
+        run: echo $OUTPUT1
       - run: echo "Success now publish"
