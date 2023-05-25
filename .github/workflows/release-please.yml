@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
-        with: 16
+        with:
+          node_version: 16
       - uses: actions/checkout@v3
       - run: yarn install
       - run: yarn build
