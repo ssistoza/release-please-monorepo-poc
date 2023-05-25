@@ -10,7 +10,12 @@ permissions:
 name: release-please
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn build
   release-please:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
