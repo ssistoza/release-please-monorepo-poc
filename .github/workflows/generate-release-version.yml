@@ -7,7 +7,7 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: Release Please
 
 jobs:
   build:
@@ -24,10 +24,27 @@ jobs:
   create-release-pr:
     needs: build
     runs-on: ubuntu-latest
+     outputs:
+      releases_created: ${{ steps.rp.outputs.releases_created }}
     steps:
+      - id: rp
       - uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
           release-type: node
           package-name: release-please-action
           monorepo-tags: true
+  publish-package:
+    if: job.create-release-pr.outputs.releases_created
+    needs: [build, create-release-pr]
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          OUTPUT: ${{ needs.create-release-pr.outputs.releases_created }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - run: echo "$OUTPUT"
+      - run: echo "Success now publish"
