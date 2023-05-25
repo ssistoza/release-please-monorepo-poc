@@ -29,11 +29,11 @@ jobs:
     steps:
       - id: rp
         uses: google-github-actions/release-please-action@v3
-          with:
-            command: manifest
-            release-type: node
-            package-name: release-please-action
-            monorepo-tags: true
+        with:
+          command: manifest
+          release-type: node
+          package-name: release-please-action
+          monorepo-tags: true
   publish-package:
     if: job.create-release-pr.outputs.releases_created
     needs: [build, create-release-pr]
