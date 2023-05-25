@@ -35,7 +35,6 @@ jobs:
           package-name: release-please-action
           monorepo-tags: true
   publish-package:
-    if: ${{ jobs.create-release-pr.outputs.releases_created == true }}
     needs: [build, create-release-pr]
     runs-on: ubuntu-latest
     steps:
@@ -44,7 +43,5 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-      - env:
-          OUTPUT: ${{ needs.create-release-pr.outputs.releases_created }}
-        run: echo "$OUTPUT"
+        run: echo ${{ jobs.create-release-pr.outputs.releases_created }}
       - run: echo "Success now publish"
