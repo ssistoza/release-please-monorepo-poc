@@ -1,6 +1,7 @@
 {
   "name": "publish-demo",
   "packageManager": "yarn@1.22.19",
+  "description": "Publish demo description",
   "private": true,
   "scripts": {
     "ci": "yarn install --frozen-lockfile",
