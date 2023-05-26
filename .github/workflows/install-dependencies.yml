@@ -1,4 +1,4 @@
-name: Setup Node (and install any dependencies)
+name: Setup Node and install dependencies
 
 jobs:
   prep:
