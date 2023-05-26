@@ -13,6 +13,8 @@ jobs:
     name: Quality Gate
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
       - name: Setup & Install Dependencies
         uses: ./.github/workflows/install-dependencies.yml
       - name: Gate Checking
