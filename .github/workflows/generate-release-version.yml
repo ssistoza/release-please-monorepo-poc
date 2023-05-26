@@ -7,46 +7,31 @@ permissions:
   contents: write
   pull-requests: write
 
-name: Release Please
+name: Build, Generate Release PR, and Publish
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'yarn'
-      - run: yarn install
-      - run: yarn build
-
-  create-release-pr:
-    needs: build
-    runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ steps.rp.outputs.releases_created }}
-    steps:
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run Build
+        run: yarn build
       - id: rp
+        name: Release Please Process (Create Release or Create Release PR)
         uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
           release-type: node
           package-name: release-please-action
           monorepo-tags: true
-      - run: echo a release was created.
+      - name: Publish Packages
         if: steps.rp.outputs.releases_created
-  publish-package:
-    needs: [build, create-release-pr]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'yarn'
-      - env:
-          OUTPUT1: ${{needs.create-release-pr.outputs.output1}}
-          OUTPUT2: Test
-        run: echo $OUTPUT1 $OUTPUT2
-      - run: echo "Success now publish"
+        run: npx lerna publish from-package
