@@ -34,8 +34,8 @@ jobs:
           release-type: node
           package-name: release-please-action
           monorepo-tags: true
-        if: steps.rp.outputs.releases_created
       - run: echo a release was created.
+        if: steps.rp.outputs.releases_created
   publish-package:
     needs: [build, create-release-pr]
     runs-on: ubuntu-latest
