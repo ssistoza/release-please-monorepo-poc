@@ -8,10 +8,9 @@
     "demo": "echo glowing-barnacle",
     "add:packages": "yarn add",
     "nuke": "rimraf .turbo dist node_modules",
-    "build": "tsup index.ts"
+    "build": "tsc"
   },
   "devDependencies": {
-    "tsup": "^6.7.0",
     "typescript": "^5.0.0"
   },
   "dependencies": {
