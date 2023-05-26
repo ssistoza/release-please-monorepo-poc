@@ -1,0 +1,16 @@
+name: Validate Pull Request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  pull_request:
+    types: ['opened', 'edited', 'reopened', 'synchronize']
+
+jobs:
+  prep:
+    - uses: ./.github/workflow/install-dependencies.yml
+  code-quality-check:
+    - name: Quality Gate
+      run: echo Linting PR Title at this point `yarn turbo run build lint test`
