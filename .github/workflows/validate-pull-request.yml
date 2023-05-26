@@ -10,7 +10,7 @@ on:
 
 jobs:
   prep:
-    - uses: ./.github/workflow/install-dependencies.yml
+    uses: ./.github/workflow/install-dependencies.yml
   code-quality-check:
     - name: Quality Gate
       run: echo Linting PR Title at this point `yarn turbo run build lint test`
