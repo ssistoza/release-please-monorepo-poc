@@ -1,4 +1,6 @@
 {
+  "name": "publish-demo",
+  "packageManager": "yarn@1.22.19",
   "private": true,
   "scripts": {
     "ci": "yarn install --frozen-lockfile",
@@ -6,21 +8,20 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "create:pkg": "turbo gen workspace --name",
     "publish-packages": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
     "lerna": "^6.6.2",
     "prettier": "^2.5.1",
     "release-please": "^15.10.4",
+    "syncpack": "^9.8.6",
     "turbo": "^1.9.7"
   },
-  "name": "publish-demo",
-  "packageManager": "yarn@1.22.19",
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/*",
+    "tools/*"
   ]
 }
