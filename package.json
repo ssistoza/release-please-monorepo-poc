@@ -3,13 +3,15 @@
   "packageManager": "yarn@3.5.1",
   "private": true,
   "scripts": {
-    "ci": "yarn install --frozen-lockfile",
+    "ci": "yarn install --immutable --immutable-cache",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "nuke": "turbo run nuke",
     "create:pkg": "turbo gen workspace --name",
-    "publish-packages": "lerna publish from-package --yes"
+    "publish-packages": "lerna publish from-package --yes",
+    "add-packages": ""
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
