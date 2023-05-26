@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/ssistoza/release-please-monorepo-poc/compare/glowing-barnacle-v1.5.0...glowing-barnacle-v1.5.1) (2023-05-26)
+
+
+### Bug Fixes
+
+* cleanup ([40ae416](https://github.com/ssistoza/release-please-monorepo-poc/commit/40ae416d473d011303f57146c0293a04d3032e4d))
+
 ## [1.5.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/glowing-barnacle-v1.4.0...glowing-barnacle-v1.5.0) (2023-05-26)
 
 
