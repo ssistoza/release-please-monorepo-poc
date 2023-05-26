@@ -15,7 +15,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-      - name: Setup & Install Dependencies
-        uses: ./.github/workflows/install-dependencies.yml
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'yarn'
+      - name: Install Dependencies
+        run: yarn ci
       - name: Gate Checking
         run: echo Linting PR Title at this point `yarn turbo run build lint test`

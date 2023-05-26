@@ -23,8 +23,13 @@ jobs:
           release-type: node
           package-name: release-please-action
           monorepo-tags: true
-      - uses: ./.github/workflow/install-dependencies.yml
+      - name: Setup node
         if: steps.rp.outputs.releases_created
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'yarn'
       - name: Run Build
         if: steps.rp.outputs.releases_created
         run: yarn build
