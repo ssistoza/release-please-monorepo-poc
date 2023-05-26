@@ -24,4 +24,4 @@ jobs:
       - name: Install Dependencies
         run: yarn ci
       - name: Gate Checking
-        run: echo Linting PR Title at this point `yarn turbo run build lint test`
+        run: echo Running gate check
