@@ -15,5 +15,5 @@ jobs:
   code-quality-check:
     name: Quality Gate
     steps:
-      name: Gate Checking
-      run: echo Linting PR Title at this point `yarn turbo run build lint test`
+      - name: Gate Checking
+        run: echo Linting PR Title at this point `yarn turbo run build lint test`
