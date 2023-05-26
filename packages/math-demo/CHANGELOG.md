@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.5.0...fluffy-bassoon-v1.5.1) (2023-05-26)
+
+
+### Bug Fixes
+
+* cleanup ([95efcaa](https://github.com/ssistoza/release-please-monorepo-poc/commit/95efcaa16107810655f7164662fed9cdfb1069e3))
+
 ## [1.5.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.4.0...fluffy-bassoon-v1.5.0) (2023-05-26)
 
 
