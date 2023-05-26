@@ -1,5 +1,7 @@
 name: Setup Node and install dependencies
 
+on: workflow_call
+
 jobs:
   prep:
     name: Preparing build process
