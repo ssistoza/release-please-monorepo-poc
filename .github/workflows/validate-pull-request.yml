@@ -16,6 +16,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Setup & Install Dependencies
-        uses: ./.github/workflows/install-dependencies.yml
+        uses: ./.github/workflows/setup-environment.yml
+        secrets: inherit
       - name: Gate Checking
         run: echo Linting PR Title at this point `yarn turbo run build lint test`
