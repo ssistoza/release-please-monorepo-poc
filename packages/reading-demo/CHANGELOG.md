@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/glowing-barnacle-v1.3.0...glowing-barnacle-v1.4.0) (2023-05-26)
+
+
+### Features
+
+* update to reader ([166a86f](https://github.com/ssistoza/release-please-monorepo-poc/commit/166a86f3611ec918cdea7b1fe064750caccd1095))
+
 ## [1.3.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/glowing-barnacle-v1.2.0...glowing-barnacle-v1.3.0) (2023-05-25)
 
 
