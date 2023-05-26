@@ -11,6 +11,7 @@ name: Build, Generate Release PR, and Publish
 
 jobs:
   build:
+    name: Build and Generate Release PR or Publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
