@@ -27,7 +27,7 @@ jobs:
       - name: Run Build
         run: yarn build
       - id: rp
-        name: Release Please Process (Create Release or Create Release PR)
+        name: Create a Release PR or Create a Release
         uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
@@ -36,6 +36,6 @@ jobs:
           monorepo-tags: true
       - name: Publish Packages
         if: steps.rp.outputs.releases_created
-        run: npx lerna publish from-package
+        run: yarn publish-packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
