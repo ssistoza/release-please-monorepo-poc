@@ -5,6 +5,7 @@
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "scripts": {
+    "demo": "echo fluffy-bassoon",
     "add:packages": "yarn add",
     "nuke": "rimraf .turbo dist node_modules",
     "build": "tsup index.ts"
@@ -20,6 +21,7 @@
     "vitest": "^0.31.1"
   },
   "dependencies": {
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "vite": "^4.3.9"
   }
 }

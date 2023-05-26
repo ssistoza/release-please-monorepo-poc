@@ -42,12 +42,12 @@ __metadata:
   linkType: hard
 
 "@babel/runtime-corejs3@npm:^7.9.2":
-  version: 7.21.5
-  resolution: "@babel/runtime-corejs3@npm:7.21.5"
+  version: 7.22.0
+  resolution: "@babel/runtime-corejs3@npm:7.22.0"
   dependencies:
-    core-js-pure: ^3.25.1
+    core-js-pure: ^3.30.2
     regenerator-runtime: ^0.13.11
-  checksum: c349a15675067f45d78f4c94ba111227a43608a261feb3d770168e4c6718b25823a143af9201e946511eb290d6d319d2f893eb87b14020fadf49cebd77269139
+  checksum: 412e3551f96de3d4ce260c5396960a95641bf59bc707d62a95111f98b326a59db180f591922dc8349048a3a5cd92879d755d9cf54e41f812a862da6255ad4246
   languageName: node
   linkType: hard
 
@@ -1294,9 +1294,16 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.2.3
-  resolution: "@types/node@npm:20.2.3"
-  checksum: 576065e8fc1fa45798c8f59a6bf809169582d04abc2e25fab1a048ffc734975b9992ae31be0d960cf705a21fb37112f7fcde11aa322beddf7491e73d5a5a988c
+  version: 20.2.4
+  resolution: "@types/node@npm:20.2.4"
+  checksum: 6bc45fdc1c1c0c0e03ca9aded926a5ce0f5e8154ae476a996f22832c530a8c909cfa2979b0b08c506477e836910f8b888bbe6eb9ebb698c4cd6f1f602456a9d4
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.0.0":
+  version: 16.18.33
+  resolution: "@types/node@npm:16.18.33"
+  checksum: 4d23c8776186cf221e70410c68da8d98e962311104891e1995b565fc926bcb5bb07ae32f65dd0a41104dbe685abd5972c23146a74f9bb5d427a73622157b42f5
   languageName: node
   linkType: hard
 
@@ -2535,7 +2542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-pure@npm:^3.25.1":
+"core-js-pure@npm:^3.30.2":
   version: 3.30.2
   resolution: "core-js-pure@npm:3.30.2"
   checksum: e0e012fe94e38663d837410baac62efe05d0c7431e3fbaa70c65f51eb980da9c3add225eca04208d576bc0d92cefeca9a4f7671a65fd84fd7dfc92d8618dddfd
@@ -3501,6 +3508,7 @@ __metadata:
     rimraf: ^5.0.1
     tsup: ^6.7.0
     typescript: ^4.5.2
+    vite: ^4.3.9
     vitest: ^0.31.1
   languageName: unknown
   linkType: soft
@@ -3915,8 +3923,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "glowing-barnacle@workspace:packages/reading-demo"
   dependencies:
+    rimraf: ^5.0.1
     tsup: ^6.7.0
     typescript: ^4.5.2
+    vite: ^4.3.9
   languageName: unknown
   linkType: soft
 
@@ -4335,7 +4345,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.11.0, is-core-module@npm:^2.5.0, is-core-module@npm:^2.8.1":
+"is-core-module@npm:^2.12.0, is-core-module@npm:^2.5.0, is-core-module@npm:^2.8.1":
   version: 2.12.1
   resolution: "is-core-module@npm:2.12.1"
   dependencies:
@@ -6737,6 +6747,7 @@ __metadata:
   resolution: "publish-demo@workspace:."
   dependencies:
     "@turbo/gen": ^1.9.7
+    "@types/node": ^16.0.0
     eslint: ^7.32.0
     lerna: ^6.6.2
     prettier: ^2.5.1
@@ -7018,8 +7029,8 @@ __metadata:
   linkType: hard
 
 "release-please@npm:^15.10.4":
-  version: 15.10.4
-  resolution: "release-please@npm:15.10.4"
+  version: 15.10.5
+  resolution: "release-please@npm:15.10.5"
   dependencies:
     "@conventional-commits/parser": ^0.4.1
     "@google-automations/git-file-utils": ^1.2.5
@@ -7057,7 +7068,7 @@ __metadata:
     yargs: ^17.0.0
   bin:
     release-please: build/src/bin/release-please.js
-  checksum: 8d9f1793a93a9c07239efbfba7b5bcf38fa253b3f3fd15e59f7a24b18934c4e167c120ed84ed2a6d90754fa3eed7a4bfa77318a846ed6e16f67898dc7f75962a
+  checksum: c771f3aac9d33c9a5f47cd0af6c82c19062a7f9c50854783d7d40d987992d7e8c37d65de974d1f758760ab5ba1a118ce5c7f1b74d31d466bd9ed065f1156c931
   languageName: node
   linkType: hard
 
@@ -7099,28 +7110,28 @@ __metadata:
   linkType: hard
 
 "resolve@npm:^1.10.0, resolve@npm:^1.12.0":
-  version: 1.22.2
-  resolution: "resolve@npm:1.22.2"
+  version: 1.22.3
+  resolution: "resolve@npm:1.22.3"
   dependencies:
-    is-core-module: ^2.11.0
+    is-core-module: ^2.12.0
     path-parse: ^1.0.7
     supports-preserve-symlinks-flag: ^1.0.0
   bin:
     resolve: bin/resolve
-  checksum: 7e5df75796ebd429445d102d5824482ee7e567f0070b2b45897b29bb4f613dcbc262e0257b8aeedb3089330ccaea0d6a0464df1a77b2992cf331dcda0f4cb549
+  checksum: fb834b81348428cb545ff1b828a72ea28feb5a97c026a1cf40aa1008352c72811ff4d4e71f2035273dc536dcfcae20c13604ba6283c612d70fa0b6e44519c374
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>":
-  version: 1.22.2
-  resolution: "resolve@patch:resolve@npm%3A1.22.2#~builtin<compat/resolve>::version=1.22.2&hash=c3c19d"
+  version: 1.22.3
+  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
   dependencies:
-    is-core-module: ^2.11.0
+    is-core-module: ^2.12.0
     path-parse: ^1.0.7
     supports-preserve-symlinks-flag: ^1.0.0
   bin:
     resolve: bin/resolve
-  checksum: 66cc788f13b8398de18eb4abb3aed90435c84bb8935953feafcf7231ba4cd191b2c10b4a87b1e9681afc34fb138c705f91f7330ff90bfa36f457e5584076a2b8
+  checksum: ad59734723b596d0891321c951592ed9015a77ce84907f89c9d9307dd0c06e11a67906a3e628c4cae143d3e44898603478af0ddeb2bba3f229a9373efe342665
   languageName: node
   linkType: hard
 
@@ -8047,6 +8058,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tsconfig@workspace:tools/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "tsconfig@workspace:tools/tsconfig"
+  languageName: unknown
+  linkType: soft
+
 "tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -8522,7 +8539,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0 || ^4.0.0":
+"vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.3.9":
   version: 4.3.9
   resolution: "vite@npm:4.3.9"
   dependencies:
