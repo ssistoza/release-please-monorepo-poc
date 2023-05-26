@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.4.0...fluffy-bassoon-v1.5.0) (2023-05-26)
+
+
+### Features
+
+* maths try again ([a91add2](https://github.com/ssistoza/release-please-monorepo-poc/commit/a91add2c46b94040e8e9339a90877c21a8b9892b))
+
 ## [1.4.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.3.0...fluffy-bassoon-v1.4.0) (2023-05-26)
 
 
