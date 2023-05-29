@@ -31,6 +31,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
       - name: Install Dependencies
+        if: steps.rp.outputs.releases_created
         run: yarn install --immutable
       - name: Run Build
         if: steps.rp.outputs.releases_created
