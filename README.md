@@ -3,7 +3,7 @@
 This is a poc using release-please in a monorepo environment using the following technologies:
 
 - Github Actions for pipeline automation.
-- Turborepo for orchestration.
+- Turborepo for orchestration and package scaffolding.
 - Vite for building
 - Vitest for testing.
 - Lerna for publishing
@@ -21,3 +21,7 @@ The following are required to set this up on your own:
 2. `yarn install` at the root.
 3. Setup npmjs secrets for forked repo.
 4. Begin testing.
+
+## Creating a new package
+
+Turborepo has a awesome cli to help create pacakages based on your current pacakges.

@@ -7,7 +7,7 @@
   "scripts": {
     "demo": "echo glowing-barnacle",
     "add:packages": "yarn add",
-    "nuke": "rimraf .turbo dist node_modules",
+    "nuke": "rimraf dist node_modules",
     "build": "tsc"
   },
   "devDependencies": {
