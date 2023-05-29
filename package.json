@@ -14,7 +14,6 @@
     "add:packages": "lerna add packages/*"
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
     "@types/node": "^16.0.0",
     "eslint": "^7.32.0",
     "lerna": "^6.6.2",
@@ -22,7 +21,6 @@
     "prettier": "^2.5.1",
     "release-please": "^15.10.4",
     "rimraf": "^5.0.1",
-    "turbo": "^1.9.7",
     "typescript": "^5.0.0",
     "vitest": "^0.31.1"
   },
