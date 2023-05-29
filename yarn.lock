@@ -3371,9 +3371,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fluffy-bassoon@workspace:packages/math-demo":
+"fluffy-bassoon@workspace:packages/fluffy-bassoon":
   version: 0.0.0-use.local
-  resolution: "fluffy-bassoon@workspace:packages/math-demo"
+  resolution: "fluffy-bassoon@workspace:packages/fluffy-bassoon"
   dependencies:
     "@tools/testing": "workspace:*"
     rimraf: ^5.0.1
@@ -3801,9 +3801,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glowing-barnacle@workspace:packages/reading-demo":
+"glowing-barnacle@workspace:packages/glowing-barnacle":
   version: 0.0.0-use.local
-  resolution: "glowing-barnacle@workspace:packages/reading-demo"
+  resolution: "glowing-barnacle@workspace:packages/glowing-barnacle"
   dependencies:
     "@tools/testing": "workspace:*"
     rimraf: ^5.0.1
