@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.7.0...fluffy-bassoon-v1.8.0) (2023-05-29)
+
+
+### Features
+
+* whole rename ([623c048](https://github.com/ssistoza/release-please-monorepo-poc/commit/623c048c7ef5ed60f87b84592636008f61a3021b))
+
 ## [1.7.0](https://github.com/ssistoza/release-please-monorepo-poc/compare/fluffy-bassoon-v1.6.0...fluffy-bassoon-v1.7.0) (2023-05-29)
 
 
