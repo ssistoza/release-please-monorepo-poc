@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.5.1",
   "private": true,
   "scripts": {
-    "build": "lern run build",
+    "build": "lerna run build",
     "dev": "lerna run dev",
     "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
