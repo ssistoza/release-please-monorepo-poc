@@ -11,6 +11,7 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@tools/testing": "workspace:*",
     "typescript": "^5.0.0"
   },
   "dependencies": {

@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "ci": "yarn install --immutable --immutable-cache",
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "build": "lern run build",
+    "dev": "lerna run dev",
+    "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "nuke": "lerna run nuke --parallel && rimraf node_modules",
     "create:pkg": "turbo gen workspace --name",

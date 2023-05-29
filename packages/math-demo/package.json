@@ -17,6 +17,7 @@
     "license.md"
   ],
   "devDependencies": {
+    "@tools/testing": "workspace:*",
     "typescript": "^5.0.0",
     "vitest": "^0.31.1"
   },
