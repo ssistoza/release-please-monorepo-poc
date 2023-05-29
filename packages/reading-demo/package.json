@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "demo": "echo glowing-barnacle",
-    "add:packages": "yarn add",
     "nuke": "rimraf dist node_modules",
+    "test:ci": "vitest run",
     "build": "tsc"
   },
   "devDependencies": {

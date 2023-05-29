@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "demo": "echo fluffy-bassoon",
-    "add:packages": "yarn add",
     "nuke": "rimraf dist node_modules",
+    "test:ci": "vitest run",
     "prebuild": "rimraf dist",
     "build": "tsc"
   },

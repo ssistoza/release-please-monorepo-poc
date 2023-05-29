@@ -1,5 +1,5 @@
-export const shortTest = 3000;
-export const longTest = 10000;
+export const shortTest = 1000;
+export const longTest = 2000;
 
 export const setTimer = (ms: number) => {
   return new Promise((resolve) => {

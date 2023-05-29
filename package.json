@@ -9,7 +9,7 @@
     "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "nuke": "lerna run nuke --parallel && rimraf node_modules",
-    "create:pkg": "turbo gen workspace --name",
+    "test": "lerna run test:ci",
     "publish-packages": "lerna publish from-package --yes",
     "add:packages": "lerna add packages/*"
   },
