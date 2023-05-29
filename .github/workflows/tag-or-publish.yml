@@ -30,6 +30,8 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
+      - name: Install Dependencies
+        run: yarn ci
       - name: Run Build
         if: steps.rp.outputs.releases_created
         run: yarn build
