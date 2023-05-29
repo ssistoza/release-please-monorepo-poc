@@ -24,4 +24,4 @@ jobs:
       - name: Install Dependencies
         run: yarn ci
       - name: Gate Checking
-        run: echo Running the gate checks
+        run: yarn test
