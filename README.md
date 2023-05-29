@@ -3,7 +3,6 @@
 This is a poc using release-please in a monorepo environment using the following technologies:
 
 - Github Actions for pipeline automation.
-- Turborepo for orchestration and package scaffolding.
 - Vite for building
 - Vitest for testing.
 - Lerna for publishing
