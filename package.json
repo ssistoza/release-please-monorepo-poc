@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.5.1",
   "private": true,
   "scripts": {
-    "ci": "yarn install --immutable --immutable-cache",
+    "ci": "yarn install --immutable",
     "build": "lern run build",
     "dev": "lerna run dev",
     "lint": "lerna run lint",

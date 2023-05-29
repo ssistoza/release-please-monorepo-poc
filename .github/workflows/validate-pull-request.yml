@@ -22,6 +22,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: yarn ci
       - name: Gate Checking
         run: yarn test
